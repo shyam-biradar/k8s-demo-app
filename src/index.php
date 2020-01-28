@@ -1,5 +1,5 @@
 <?php
 
-echo "Hello World, from TrilioVault! <br>";
-echo "TrilioVault for Kubernetes! <br>";
+echo "Hello World, from Trilio! <br>";
+echo "Demo App for Kubernetes! <br>";
 ?>
