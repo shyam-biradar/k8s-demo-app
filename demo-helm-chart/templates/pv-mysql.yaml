@@ -1,0 +1,17 @@
+## PV for mysql
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+  labels:
+     app: k8s-demo-app
+     tier: frontend
+spec:
+  capacity: 
+    storage: 6Gi
+  accessModes:
+    - ReadWriteOnce
+    - ReadOnlyMany
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /opt/mysql
