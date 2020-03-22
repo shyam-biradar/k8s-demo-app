@@ -6,10 +6,8 @@ metadata:
     app: k8s-demo-app
     tier: frontend
 spec:
-  type: LoadBalancer
   ports:
   - name: web
-    nodePort: 30900
     port: 80
   selector:
     app: k8s-demo-app
