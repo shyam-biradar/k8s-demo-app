@@ -12,4 +12,3 @@ spec:
   selector:
     app: k8s-demo-app
     tier: mysql
-  clusterIP: None
