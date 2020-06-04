@@ -16,10 +16,7 @@ if (isset($_POST['submit_write'])) {
         
         $new_user = array(
             "firstname" => $_POST['firstname'],
-            "lastname"  => $_POST['lastname'],
-            "email"     => $_POST['email'],
-            "age"       => $_POST['age'],
-            "location"  => $_POST['location']
+            "lastname"  => $_POST['lastname']
         );
 
         $sql = sprintf(
