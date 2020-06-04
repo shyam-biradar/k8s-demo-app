@@ -47,12 +47,6 @@ if (isset($_POST['submit_write'])) {
     <input type="text" name="firstname" id="firstname">
     <label for="lastname">Last Name</label>
     <input type="text" name="lastname" id="lastname">
-    <label for="email">Email Address</label>
-    <input type="text" name="email" id="email">
-    <label for="age">Age</label>
-    <input type="text" name="age" id="age">
-    <label for="location">Location</label>
-    <input type="text" name="location" id="location">
     <input type="submit" name="submit_write" value="Submit">
 </form>
 
@@ -107,9 +101,6 @@ if (isset($_POST['submit_read'])) {
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Email Address</th>
-                    <th>Age</th>
-                    <th>Location</th>
                     <th>Date</th>
                 </tr>
             </thead>
@@ -119,9 +110,6 @@ if (isset($_POST['submit_read'])) {
                 <td><?php echo escape($row["id"]); ?></td>
                 <td><?php echo escape($row["firstname"]); ?></td>
                 <td><?php echo escape($row["lastname"]); ?></td>
-                <td><?php echo escape($row["email"]); ?></td>
-                <td><?php echo escape($row["age"]); ?></td>
-                <td><?php echo escape($row["location"]); ?></td>
                 <td><?php echo escape($row["date"]); ?> </td>
             </tr>
         <?php } ?>
