@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: demoapp-frontend
-        image: docker.io/trilio/k8s-demo-app:poc2
+        image: docker.io/trilio/k8s-demo-app:poc3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
